@@ -226,7 +226,7 @@ mean_by_weekday <- taxi_data_filter %>%
 ggplot(mean_by_weekday, aes(x=pickup_weekday, y=mean_weekday)) + 
   geom_point() # higher trip duration during the weekdays
 
-write.csv(taxi_data_filter, "C:\\Users\\user1\\Desktop\\taxi_data_final.csv", row.names = FALSE)
+write.csv(taxi_data_filter, "C:\\ ... \\taxi_data_final.csv", row.names = FALSE)
 
 # ------------------------------ Modelling ------------------------------ #
 
@@ -343,5 +343,6 @@ pred_plot <- ggplot(test_data_sample,
 pred_plot + geom_point(data = test_data_sample,
                     aes(x=trip_duration, y=rf_predictions),
                     color = "darkred") # Clearly a better fit
+
 
 
