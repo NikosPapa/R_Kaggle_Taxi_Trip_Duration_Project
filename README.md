@@ -200,13 +200,6 @@ A multiple linear regression model was trained using all available features:
 
 All features were statistically significant except for `vendor_id` (p-value ≈ 0.081), which had minimal influence on the model. The model did not show signs of overfitting, and the predictions generally aligned well with the true trip durations.  
 
-Visualization of predicted vs actual values shows a reasonable fit, with most points following the diagonal, although some high-duration trips remain harder to predict accurately.
-
-### Linear Model Predictions (Sample of 5,000 Trips)
-The scatter plot below shows predicted vs. actual trip durations for a sample of 5,000 observations using the linear regression model. Most predictions align along the diagonal, though longer trips are more challenging to predict accurately.
-
-![Linear Model Predictions](lm_plot.png)
-
 ---
 
 ### Random Forest Model
